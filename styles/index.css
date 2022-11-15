@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+:root {
+  --background-color: #eeeeee;
+  --text-color: #1a1a1a;
+}
+
 .dark-theme {
   font-size: 16px;
 }
@@ -7,6 +12,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -122,7 +131,15 @@ main {
   margin-top: 5rem;
   margin-left: 5rem;
 }
-main #home .intro {
+main hr {
+  margin-top: 5rem;
+  border: none;
+  border-top: 0.2em solid rgb(2, 122, 22);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 50em;
+}
+main #home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +151,7 @@ main #home .intro .intro-img img {
 }
 main #home .intro .intro-text {
   margin-top: 2rem;
-  max-width: 80em;
+  max-width: 50em;
   color: rgb(188, 188, 188);
 }
 main #home .intro .intro-text h2 {
@@ -161,64 +178,260 @@ main #home .intro .intro-text button:hover {
   cursor: pointer;
 }
 main #home .intro .why-text {
-  margin-top: 5rem;
-  max-width: 80em;
+  margin-top: 3rem;
+  max-width: 50em;
   color: rgb(188, 188, 188);
 }
-main #home .intro .why-text .text-img-container {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
-}
-main #home .intro .why-text .text-img-container h2 {
+main #home .intro .why-text h2 {
   font-size: 2em;
   font-weight: bold;
-  vertical-align: bottom;
-}
-main #home .intro .why-text .text-img-container img {
-  display: none;
-  width: 5em;
+  margin-bottom: 1rem;
 }
 main #home .intro .why-text p {
   font-size: 1.2em;
   max-width: 50rem;
   margin-bottom: 1rem;
 }
-main #game {
-  margin-top: 15rem;
+main #home .intro .why-text img {
+  width: 100%;
+  border-radius: 5px;
 }
-main #game .intro {
+main #game {
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-main #game .intro .intro-text {
+main #game .intro-text {
   color: #b6b6b6;
-  max-width: 80em;
+  max-width: 50em;
 }
-main #game .intro .intro-text h2 {
+main #game .intro-text h2 {
   font-size: 2em;
   margin-bottom: 1rem;
   font-weight: bold;
 }
-main #game .intro .intro-text p {
+main #game .intro-text p {
   font-size: 1.2em;
   max-width: 50rem;
   margin-bottom: 1rem;
 }
+main #game .intro-text iframe {
+  max-width: 50em;
+  border-radius: 15px;
+}
 main #game .npc {
+  margin-top: 2rem;
+  color: #b6b6b6;
+  display: flex;
+  max-width: 50em;
+}
+main #game .npc .npc-left h2 {
+  margin-bottom: 0.5rem;
+}
+main #game .npc .npc-right {
+  max-width: 25em;
+}
+main #game .npc .npc-right ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main #game .npc .npc-right li {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+main #game .npc .npc-right li .npc-hover img {
+  cursor: pointer;
+}
+main #game .npc .npc-right li .npc-hover img:after {
+  content: attr(data-popuptext);
+  background: rgba(255, 0, 0, 0.85);
+  border-radius: 3px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: 500ms ease;
+  white-space: nowrap;
+  max-height: 0;
+}
+main #game .npc .npc-right li .npc-hover img:hover:after {
+  opacity: 1;
+  top: 1.2em;
+  max-height: 200px;
+  padding: 0.4em;
+}
+main #game .npc .npc-right li img {
+  cursor: pointer;
+}
+main #game .npc .npc-right li img:after {
+  content: attr(data-popuptext);
+  background: rgba(255, 0, 0, 0.85);
+  border-radius: 3px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: 500ms ease;
+  white-space: nowrap;
+  max-height: 0;
+}
+main #game .npc .npc-right li img:hover:after {
+  opacity: 1;
+  top: 1.2em;
+  max-height: 200px;
+  padding: 0.4em;
+}
+main #game .boss {
+  margin-top: 2rem;
+  color: #b6b6b6;
+  display: flex;
+  max-width: 50em;
+  display: flex;
+  flex-direction: column;
+}
+main #game .boss ul {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+main #game .boss ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: rgb(7, 193, 38);
+}
+main #game .boss ul li img {
+  width: 5.5em;
+  height: 5.5em;
+  margin-bottom: 0.5rem;
+}
+main #game .boss ul li .diff-bar {
+  width: 6em;
+  height: 0.3em;
+  border-radius: 5px;
+}
+main #contact {
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-main #game .npc .npc-list ul {
+main #contact .intro-text {
+  color: #b6b6b6;
+  max-width: 50em;
+}
+main #contact .intro-text h2 {
+  font-size: 2em;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+main #contact .intro-text p {
+  font-size: 1.2em;
+  max-width: 50rem;
+  margin-bottom: 1rem;
+}
+main #contact form {
+  background: rgb(8, 8, 8);
+  background: linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(54, 94, 5) 100%);
+  border-radius: 5px;
+  width: 50em;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+main #contact form .container label {
+  color: #b6b6b6;
+  margin-bottom: 0.5rem;
+}
+main #contact form .container input[type=text] {
+  width: 20em;
+  background: #aaaaaa;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  margin-bottom: 1rem;
+}
+main #contact form .container input[type=text]:focus {
+  outline: none;
+  background: white;
+}
+main #contact form .container input[type=submit] {
+  margin-top: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #aaaaaa;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+}
+main #contact form .container input[type=submit]:hover {
+  background-color: green;
+  color: white;
+}
+main #contact form .container textarea {
+  background: #aaaaaa;
+  width: 100%;
+  height: 10em;
+  border: none;
+  padding: 0.5rem;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  resize: none;
+}
+main #contact form .container textarea:focus {
+  outline: none;
+  background: white;
+}
+main #contact form .container .name {
   display: flex;
   flex-direction: row;
+  gap: 8rem;
 }
-main #game .npc .npc-list li {
-  margin-right: 1rem;
+main #contact form .container .name .fname {
+  display: flex;
+  flex-direction: column;
+}
+main #contact form .container .name .lname {
+  display: flex;
+  flex-direction: column;
+}
+main #contact form .container .email-phone {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+}
+main #contact form .container .email-phone .email {
+  display: flex;
+  flex-direction: column;
+}
+main #contact form .container .email-phone .phone {
+  display: flex;
+  flex-direction: column;
+}
+main #contact form .container .message {
+  display: flex;
+  flex-direction: column;
+}
+main #contact form .container .form-comment {
+  margin-top: 1rem;
+  color: #b6b6b6;
 }
 
 @-webkit-keyframes bounce {
