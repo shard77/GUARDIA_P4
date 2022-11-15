@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+$text-primary: #b6b6b6;
+$text-secondary: #ececec;
+$bg-primary: #23232e;
+$bg-secondary: #141418;
+$transition-speed: 600ms;
 
 .dark-theme {
-    
-}
-
-:root {
-    font-size: 16px;
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
-    --transition-speed: 600ms;
+  font-size: 16px;
 }
 
 * {
@@ -27,7 +23,7 @@ body {
 
 .navbar {
     position: fixed;
-    background-color: var(--bg-primary);
+    background-color: $bg-primary;
     transition: width 600ms ease;
     overflow: hidden;
   }
@@ -54,22 +50,23 @@ body {
     display: flex;
     align-items: center;
     height: 5rem;
-    color: var(--text-primary);
+    color: $text-primary;
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
-    transition: var(--transition-speed);
+    transition: $transition-speed;
   }
   
   .nav-link:hover {
     filter: grayscale(0%) opacity(1);
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
+    background: $bg-secondary;
+    color: $text-secondary;
 
     i {
         background: -webkit-linear-gradient(rgb(13, 160, 21), rgb(109, 245, 127));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
   }
   
   .link-text {
@@ -98,7 +95,7 @@ body {
   
   .fa-primary,
   .fa-secondary {
-    transition: var(--transition-speed);
+    transition: $transition-speed;
   }
   
   .logo {
@@ -106,8 +103,8 @@ body {
     text-transform: uppercase;
     margin-bottom: 1rem;
     text-align: center;
-    color: var(--text-secondary);
-    background: var(--bg-secondary);
+    color: $text-secondary;
+    background: $bg-secondary;
     font-size: 1.5rem;
     letter-spacing: 0.3ch;
     width: 100%;
@@ -115,7 +112,7 @@ body {
   
   .logo svg {
     transform: rotate(0deg);
-    transition: var(--transition-speed);
+    transition: $transition-speed;
   }
   
   .logo-text
@@ -123,7 +120,7 @@ body {
     display: inline;
     position: absolute;
     left: -999px;
-    transition: var(--transition-speed);
+    transition: $transition-speed;
   }
   
   .navbar:hover .logo svg {
@@ -133,10 +130,11 @@ body {
 
   
 main {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-left:5rem;
-    
-    .intro {
+
+    #home {
+      .intro {
         display:flex;
         align-items: center;
         justify-content: center;
@@ -145,10 +143,8 @@ main {
 
         .intro-img {
             img  {
-                width: 100%;
-                height:100%;
-                max-width: 50em;
-                margin-bottom:3rem;
+                width: 50em;
+                border-radius: 20px;
             }
         }
 
@@ -180,16 +176,100 @@ main {
                 &:hover {
                     box-shadow: 0px 0px 30px rgba(0, 253, 42, 0.541);
                     color: #fff;
-                    cursor: ;
+                    cursor: pointer;
                 }
             }
         }
-    
+
+        .why-text {
+          margin-top: 5rem;
+          max-width: 80em;
+          color:rgb(188, 188, 188);
+
+          .text-img-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+            
+            h2 {
+              font-size: 2em;
+              font-weight: bold;
+              vertical-align: bottom;
+            }
+
+            img {
+              display:none;
+              width:5em;
+            }
+
+          }
+
+          p {
+              font-size: 1.2em;
+              max-width: 50rem;
+              margin-bottom: 1rem;
+         
+          }   
+      }
     }
+  }
+
+  #game {
+    margin-top: 15rem;
+    .intro {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .intro-text {
+        color:#b6b6b6;
+        max-width: 80em;
+
+        h2 {
+          font-size: 2em;
+          margin-bottom: 1rem;
+          font-weight: bold;
+        }
+  
+        p {
+            font-size: 1.2em;
+            max-width: 50rem;
+            margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .npc {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .npc-list {  
+        ul {
+          display: flex;
+          flex-direction: row;
+        }
+
+        li {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
 }
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+  40% {transform: translateY(-30px);} 
+  60% {transform: translateY(-15px);} 
+} 
 
-
+@keyframes marquee{
+  0%{transform: translateX(100%);}
+  100%{transform: translateX(-100%);}
+}
 
 
   /* Small screens */
@@ -245,24 +325,24 @@ main {
   }
   
   .dark {
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
+    $text-primary: #b6b6b6;
+    $text-secondary: #ececec;
+    $bg-primary: #23232e;
+    $bg-secondary: #141418;
   }
   
   .light {
-    --text-primary: #1f1f1f;
-    --text-secondary: #000000;
-    --bg-primary: #ffffff;
-    --bg-secondary: #e4e4e4;
+    $text-primary: #1f1f1f;
+    $text-secondary: #000000;
+    $bg-primary: #ffffff;
+    $bg-secondary: #e4e4e4;
   }
   
   .solar {
-    --text-primary: #576e75;
-    --text-secondary: #35535c;
-    --bg-primary: #fdf6e3;
-    --bg-secondary: #f5e5b8;
+    $text-primary: #576e75;
+    $text-secondary: #35535c;
+    $bg-primary: #fdf6e3;
+    $bg-secondary: #f5e5b8;
   }
   
   .theme-icon {
