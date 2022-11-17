@@ -1,413 +1,440 @@
 <!DOCTYPE html>
-<html lang="en" class="light-theme">
-<head>
+<html lang="fr" class="dark-theme">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">  
+    <meta name="description" content="Site Terraria, gameplay, PNJs et bien plus!">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="icon" href="./assets/favicon.ico">
     <script src="https://kit.fontawesome.com/85b199d966.js" crossorigin="anonymous"></script>
     <script src="./scripts/main.js"></script>
     <title>Terraria</title>
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <ul class="navbar-nav">
-        <li class="logo">
-          <a href="#" class="nav-link">
-            <span class="link-text logo-text">Terraria</span>
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fad"+
-              data-icon="angle-double-right"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
-            >
-              <g class="fa-group">
-                <path
-                  fill="currentColor"
-                  d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
-                  class="fa-secondary"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
-                  class="fa-primary"
-                ></path>
-              </g>
-            </svg>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fa-solid fa-house"></i>
-            <span class="link-text">Accueil</span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="#game" class="nav-link" id="link">
-            <i class="fa-solid fa-gamepad"></i>
-            <span class="link-text">Jeu</span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">
-            <i class="fa-solid fa-address-card"></i>
-            <span class="link-text">Contact</span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="#credits" class="nav-link">
-            <i class="fa-solid fa-compass"></i>
-            <span class="link-text">Crédits</span>
-          </a>
-        </li>
-
-        <li class="nav-item" id="ThemeSwitch">
-          <button class="nav-btn" onclick="toggleTheme()">
-            <i class="fa-solid fa-bolt"></i>
-            <span class="link-text">Light/Dark</span>
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="home">
-      <div class="intro">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="logo">
+            <a href="#" class="nav-link">
+              <span class="link-text logo-text">Terraria</span>
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
+                <g class="fa-group">
+                  <path fill="currentColor" d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z" class="fa-secondary"></path>
+                  <path fill="currentColor" d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z" class="fa-primary"></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-house"></i>
+              <span class="link-text">Accueil</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#game" class="nav-link" id="link">
+              <i class="fa-solid fa-gamepad"></i>
+              <span class="link-text">Jeu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">
+              <i class="fa-solid fa-address-card"></i>
+              <span class="link-text">Contact</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#credits" class="nav-link">
+              <i class="fa-solid fa-compass"></i>
+              <span class="link-text">Crédits</span>
+            </a>
+          </li>
+          <li class="nav-item" id="ThemeSwitch">
+            <button class="nav-btn" onclick="toggleTheme()">
+              <i class="fa-solid fa-bolt"></i>
+              <span class="link-text">Light/Dark</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="intro">
           <div class="intro-img">
-              <img src="./assets/images/terraria-banner.webp" alt="bannière terraria"/>
+            <img src="./assets/images/terraria-banner.webp" alt="bannière terraria">
           </div>
           <div class="intro-text">
             <h1>Terraria</h1>
-            <p>
-              Terraria est un jeu vidéo développé par Re-Logic, il s'agit d'un Monde ouvert en 2D type action-aventure dans lequel 
-              le joueur contrôle un personnage, visuellement
-              customisable tout comme le monde généré. Le mode solo et le mode multijoueur sont tout deux supportés.
-              La façon de jouer a pas mal de similitude au jeu connu Minecraft et il a été partiellement inspiré par celui-ci. 
-            </p>
+            <p> Terraria est un jeu vidéo développé par Re-Logic, il s'agit d'un Monde ouvert en 2D type action-aventure dans lequel le joueur contrôle un personnage, visuellement customisable tout comme le monde généré. Le mode solo et le mode multijoueur sont tout deux supportés. La façon de jouer a pas mal de similitude au jeu connu Minecraft et il a été partiellement inspiré par celui-ci. </p>
             <button onclick="window.location.href='#game'">GAMEPLAY</button>
           </div>
           <div class="why-text">
             <h2>Pourquoi Terraria?</h2>
-            <p>Terraria est un Monde ouvert, il n'y a pas d'objectif précis, ce qui veut dire que les joueurs
-                ont le temps de décider eux-mêmes quoi faire et quand le jeu est "terminé". Le but le plus populaire et le plus fréquent
-                est de rendre 
-                le personnage le plus puissant possible et battre les boss les plus durs du jeu.</p>
-            <img src="./assets/images/banner-gif.webp" alt="GIF slime et joueur terraria"/>
-          </div>
-      </div>
-      <hr>
-  </section>
-  <section id="game">
-    <div class="intro-text">
-      <h2>Le Jeu</h2>
-      <p>Le Hardmode est une phase du jeu bien plus difficile que le mode initial.
-         Un monde fait une conversion permanente vers le Hardmode après avoir battu le Mur de chair.<br><br>
-         Présentation du jeu par Jackplay Plus :</p>
-      <iframe width="860" height="315" src="https://www.youtube.com/embed/nLtbtd2tqJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="npc">
-      <div class="npc-left">
-        <h2>Les NPC's</h2>
-        <p>Un PNJ, pour Personnage Non-Joueur, est un personnage amical qui fournit des services aux joueurs. 
-           La plupart des PNJs sont des marchands : ils vendent des objets en échange de pièces, et peuvent également racheter vos 
-           objets contre de l'argent. Certains PNJs possèdent d'autres compétences.</p>
-      </div>
-      <div class="npc-right ">
-        <ul>
-          <li>
-            <img src="./assets/images/npc/guide.webp" alt="NPC guide terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/merchant.webp"alt="NPC marchant terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/nurse.webp"alt="NPC infirmière terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/painter.webp"alt="NPC peintre terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/dye-trader.webp"alt="NPC marchand de teinture terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/party_girl.webp"alt="NPC fêtarde terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/angler.webp" alt="NPC pêcheur terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/stylist.webp" alt="NPC styliste terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/demolitionist.webp" alt="NPC démolisseur terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/dryad.webp" alt="NPC dryade terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/tavernkeep.webp" alt="NPC tavernière terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/arms_dealer.webp" alt="NPC marchand d'armes terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/goblin-tinkerer.webp" alt="NPC gobelin bricoleur terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/shaman.webp" alt="NPC shaman terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/clothier.webp" alt="NPC marchant d'habits terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/mechanic.webp" alt="NPC mécanicien terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/tax_collector.webp" alt="NPC collecteur de taxes terraria"/>
-          </li>
-          <li>
-            <img src="./assets/images/npc/pirate.webp" alt="NPC pirate terraria"/>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="boss">
-        <h2>Les Boss</h2>
-        <p>Les boss sont des ennemis imposants et agressifs qui offrent un défi substantiel aux joueurs.
-           Vaincre un boss est une étape primordiale dans l'avancement de votre partie. Ils ont chacun leur propre manière d'être 
-           invoqué.
-           La plupart des boss et mini-boss peuvent passer à travers tous les types de blocs</p>
-        <ul>
-          <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/9/93/King_Slime.gif" alt="boss Roi Slime terraria"/>
-            <p>Roi Slime</p>
-            <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgb(64, 255, 0) 0%, rgb(200, 255, 0) 100%);"></div>
-          </li>
-          <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/68/Eye_of_Cthulhu.gif" alt="boss Œil de Cthulhu terraria"/>
-            <p>Œil de Cthulhu</p>
-            <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgba(142,255,0,1) 0%, rgb(210, 156, 6) 100%);"></div>
-          </li>
-          <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/60/Queen_Bee.gif" alt="boss Reine des abeilles terraria"/>
-            <p>Reine des abeilles</p>
-            <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgba(142,255,0,1) 0%, rgb(210, 135, 6) 100%);"></div>
-          </li>
-          <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6a/Brain_of_Cthulhu.gif" alt="boss Cerveau de Cthulhu terraria"/>
-            <p>Cerveau de Cthulhu</p>
-            <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgba(142,255,0,1) 0%, rgb(210, 101, 6) 100%);"></div>
-          </li>
-          <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7f/Moon_Lord.png" alt="boss Seigneur de la lune terraria"/>
-            <p>Seigneur de la lune</p>
-            <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgb(200, 255, 0) 0%, rgb(210, 9, 6) 100%);"></div>
-          </li>
-        </ul>
-    </div>
-    <div class="weapons">
-      <h2>Les Objets</h2>
-      <p>Les objets sont des entités qui font partie des composants les plus fondamentaux de Terraria.
-         Le joueur peut interagir avec la plupart des objets en les utilisant, en les consommant ou en les plaçant.</p>
-      <div class="weapons-list">
-        <ul>
-          <li>
-            <img src="./assets/images/objects/copper-sword.webp" alt="épée Cuivre Terraria">
-            <p>Épée en Cuivre</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/objects/gold-sword.webp" alt="épée or Terraria">
-            <p>Épée en Or</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/objects/gladius.webp" alt="Gladius Terraria">
-            <p>Gladius</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/objects/palladium-sword.webp" alt="épée paladium Terraria">
-            <p>Épée en Palladium</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/objects/zenith.webp" alt="épée zenith Terraria">
-            <p>Zénith</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/objects/finch-staff.webp" alt="sceptre pinson Terraria">
-            <p>Sceptre pinson</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/objects/angel-wings.webp" alt="ailes ange Terraria">
-            <p>Ailes d'Ange</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/objects/terra-boots.webp" alt="bottes terra Terraria">
-            <p>Bottes Terra</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/objects/lunas-hook.webp" alt="grappin lunaire Terraria">
-            <p>Grappin Lunaire</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/objects/stardust-pickaxe.webp" alt="pioche astrale Terraria">
-            <p>Pioche Astrale</p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <hr>
-  </section>
-  <section id="contact">
-    <div class="intro-text">
-      <h2>Nous contacter</h2>
-      <p>Pour toutes questions ou idées, merci de nous contacter via ce formulaire.</p>
-    </div>
-    <form>
-      <div class="container">
-        <div class="name">
-          <div class="fname">
-            <label for="fname">Prénom*</label>
-            <input type="text" id="fname" name="fname">
-          </div>
-          <div class="lname">
-            <label for="lname">Nom*</label>
-            <input type="text" id="lname" name="lname">
+            <p>Terraria est un Monde ouvert, il n'y a pas d'objectif précis, ce qui veut dire que les joueurs ont le temps de décider eux-mêmes quoi faire et quand le jeu est "terminé". Le but le plus populaire et le plus fréquent est de rendre le personnage le plus puissant possible et battre les boss les plus durs du jeu.</p>
+            <img src="./assets/images/banner-gif.webp" alt="GIF slime et joueur terraria">
           </div>
         </div>
-        <div class="email-phone">
-          <div class="email">
-            <label for="email">E-Mail*</label>
-            <input type="text" id="email" name="email">
+        <hr>
+      </section>
+      <section id="game">
+        <div class="intro-text">
+          <h2>Le Jeu</h2>
+          <p>Le Hardmode est une phase du jeu bien plus difficile que le mode initial. Un monde fait une conversion permanente vers le Hardmode après avoir battu le Mur de chair. <br>
+            <br> Présentation du jeu par Jackplay Plus :
+          </p>
+          <iframe src="https://www.youtube.com/embed/nLtbtd2tqJ0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="npc">
+          <div class="npc-left">
+            <h3>Les PNJs</h3>
+            <p>Un PNJ, pour Personnage Non-Joueur, est un personnage amical qui fournit des services aux joueurs. La plupart des PNJs sont des marchands : ils vendent des objets en échange de pièces, et peuvent également racheter vos objets contre de l'argent. Certains PNJs possèdent d'autres compétences.</p>
           </div>
-          <div class="phone">
-            <label for="phone">Numéro de téléphone</label>
-            <input type="text" id="phone" name="phone">
+          <div class="npc-right ">
+            <ul>
+              <li>
+                <abbr title="PNJ Guide">
+                  <img src="./assets/images/npc/guide.webp" alt="PNJ guide terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Marchand">
+                  <img src="./assets/images/npc/merchant.webp" alt="PNJ marchand terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Infirmière">
+                  <img src="./assets/images/npc/nurse.webp" alt="PNJ infirmière terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Peintre">
+                  <img src="./assets/images/npc/painter.webp" alt="PNJ peintre terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Teinture">
+                  <img src="./assets/images/npc/dye-trader.webp" alt="PNJ marchand de teinture terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Fête">
+                  <img src="./assets/images/npc/party_girl.webp" alt="PNJ fêtarde terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Pêche">
+                  <img src="./assets/images/npc/angler.webp" alt="PNJ pêcheur terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Style">
+                  <img src="./assets/images/npc/stylist.webp" alt="PNJ styliste terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Démolisseur">
+                  <img src="./assets/images/npc/demolitionist.webp" alt="PNJ démolisseur terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Dryade">
+                  <img src="./assets/images/npc/dryad.webp" alt="PNJ dryade terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Taverne">
+                  <img src="./assets/images/npc/tavernkeep.webp" alt="PNJ tavernière terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Armes">
+                  <img src="./assets/images/npc/arms_dealer.webp" alt="PNJ marchand d'armes terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Gobelin">
+                  <img src="./assets/images/npc/goblin-tinkerer.webp" alt="PNJ gobelin bricoleur terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Shaman">
+                  <img src="./assets/images/npc/shaman.webp" alt="PNJ shaman terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Habits">
+                  <img src="./assets/images/npc/clothier.webp" alt="PNJ marchant d'habits terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Mécano">
+                  <img src="./assets/images/npc/mechanic.webp" alt="PNJ mécanicien terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Taxes">
+                  <img src="./assets/images/npc/tax_collector.webp" alt="PNJ collecteur de taxes terraria">
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PNJ Pirate">
+                  <img src="./assets/images/npc/pirate.webp" alt="PNJ pirate terraria">
+                </abbr>
+              </li>
+            </ul>
           </div>
-      </div>
-      <div class="message">
-        <label for="message">Message*</label>
-        <textarea id="message" name="message" placeholder="Écris quelque chose...  (Max 500 caractères)" maxlength="500"></textarea>
-      </div>
-      <div class="form-comment">* Champs Obligatoires</div>
-      <input type="submit" value="Envoyer">
-    </div>
-    </form>
-    <hr>
-  </section>
-  <section id="credits">
-    <div class="container">
-      <div class="intro-text">
-        <h2>Crédits</h2>
-        <ul>
-          <div>
+        </div>
+        <div class="boss">
+          <h3>Les Boss</h3>
+          <p> Les boss sont des ennemis imposants et agressifs qui offrent un défi substantiel aux joueurs. Vaincre un boss est une étape primordiale dans l'avancement de votre partie. Ils ont chacun leur propre manière d'être invoqué. La plupart des boss et mini-boss peuvent passer à travers tous les types de blocs. </p>
+          <ul>
             <li>
-                <a href="https://terraria.org/"><i class="fa-solid fa-compass"></i></a>
-                <p><a href="https://terraria.org/">Site officiel de Terraria</a></p>
+              <img src="./assets/images/bosses/king_slime.webp" alt="boss roi slime terraria">
+              <p>Roi Slime</p>
+              <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgb(64, 255, 0) 0%, rgb(200, 255, 0) 100%);"></div>
             </li>
             <li>
-                <a href="https://terraria.fandom.com/fr/wiki/Terraria_Wiki"><i class="fa-solid fa-book"></i></a>
-                <p><a href="https://terraria.fandom.com/fr/wiki/Terraria_Wiki">Wiki officiel de Terraria</a></p>
-            </li>
-          </div>
-          <div>
-            <li>
-                <a href="https://codepen.io/LauraMoya/pen/wRPRvM"><i class="fa-solid fa-pen"></i></a>
-                <p><a href="https://codepen.io/LauraMoya/pen/wRPRvM">Codepen Terraria (NPCs)</a></p>
+              <img src="./assets/images/bosses/eye_of_cthulhu.webp" alt="boss Œil de Cthulhu terraria">
+              <p>Œil de Cthulhu</p>
+              <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgba(142,255,0,1) 0%, rgb(210, 156, 6) 100%);"></div>
             </li>
             <li>
-              <a href="https://store.steampowered.com/app/105600/Terraria/"><i class="fa-brands fa-steam"></i></a>
-              <p><a href="https://store.steampowered.com/app/105600/Terraria/">Steam Terraria officiel</a></p>
+              <img src="./assets/images/bosses/queen_bee.webp" alt="boss Reine des abeilles terraria">
+              <p>Reine des abeilles</p>
+              <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgba(142,255,0,1) 0%, rgb(210, 135, 6) 100%);"></div>
             </li>
+            <li>
+              <img src="./assets/images/bosses/brain_of_cthulhu.webp" alt="boss Cerveau de Cthulhu terraria">
+              <p>Cerveau de Cthulhu</p>
+              <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgba(142,255,0,1) 0%, rgb(210, 101, 6) 100%);"></div>
+            </li>
+            <li>
+              <img src="./assets/images/bosses/moon_lord.webp" alt="boss Seigneur de la lune terraria">
+              <p>Seigneur de la lune</p>
+              <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgb(200, 255, 0) 0%, rgb(210, 9, 6) 100%);"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="weapons">
+          <h3>Les Objets</h3>
+          <p>Les objets sont des entités qui font partie des composants les plus fondamentaux de Terraria. Le joueur peut interagir avec la plupart des objets en les utilisant, en les consommant ou en les plaçant.</p>
+          <div class="weapons-list">
+            <ul>
+              <li>
+                <img src="./assets/images/objects/copper-sword.webp" alt="épée Cuivre Terraria">
+                <p>Épée en Cuivre</p>
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/objects/gold-sword.webp" alt="épée or Terraria">
+                <p>Épée en Or</p>
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/objects/gladius.webp" alt="Gladius Terraria">
+                <p>Gladius</p>
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/objects/palladium-sword.webp" alt="épée paladium Terraria">
+                <p>Épée en Palladium</p>
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/objects/zenith.webp" alt="épée zenith Terraria">
+                <p>Zénith</p>
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/objects/finch-staff.webp" alt="sceptre pinson Terraria">
+                <p>Sceptre pinson</p>
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/objects/angel-wings.webp" alt="ailes ange Terraria">
+                <p>Ailes d'Ange</p>
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/objects/terra-boots.webp" alt="bottes terra Terraria">
+                <p>Bottes Terra</p>
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/objects/lunas-hook.webp" alt="grappin lunaire Terraria">
+                <p>Grappin Lunaire</p>
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </li>
+              <li>
+                <img src="./assets/images/objects/stardust-pickaxe.webp" alt="pioche astrale Terraria">
+                <p>Pioche Astrale</p>
+                <div class="stars">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </li>
+            </ul>
           </div>
-        </ul>
-      </div>
-    </div>
-    <div class="bottom-map">
-      <div class="map-img">
-        <img id="map" src="https://media.discordapp.net/attachments/1041356038630281327/1042507238390120598/map.png" alt="Terraria screen jeu">
-        <a href="https://matias.ma/nsfw/"><img id="pan" src="https://media.discordapp.net/attachments/1041356038630281327/1042506810596278272/panneau.png" alt="terraria panneau"></a>
-      </div>
-    </div>
-  </section>
-  </main>
-</body>
+        </div>
+        <hr>
+      </section>
+      <section id="contact">
+        <div class="intro-text">
+          <h2>Nous contacter</h2>
+          <p>Pour toutes questions ou idées, merci de nous contacter via ce formulaire.</p>
+        </div>
+        <form>
+          <div class="container">
+            <div class="name">
+              <div class="fname">
+                <label for="fname">Prénom*</label>
+                <input type="text" id="fname" name="fname">
+              </div>
+              <div class="lname">
+                <label for="lname">Nom*</label>
+                <input type="text" id="lname" name="lname">
+              </div>
+            </div>
+            <div class="email-phone">
+              <div class="email">
+                <label for="email">E-Mail*</label>
+                <input type="text" id="email" name="email">
+              </div>
+              <div class="phone">
+                <label for="phone">Numéro de téléphone</label>
+                <input type="text" id="phone" name="phone">
+              </div>
+            </div>
+            <div class="message">
+              <label for="message">Message*</label>
+              <textarea id="message" name="message" placeholder="Écris quelque chose...  (Max 500 caractères)" maxlength="500"></textarea>
+            </div>
+            <div class="form-comment">* Champs Obligatoires</div>
+            <input type="submit" value="Envoyer">
+          </div>
+        </form>
+        <hr>
+      </section>
+      <section id="credits">
+        <div class="container">
+          <div class="intro-text">
+            <h2>Crédits</h2>
+            <div class="credit-list">
+              <ul>
+                <li>
+                  <a href="https://terraria.org/">
+                    <i class="fa-solid fa-compass"></i>
+                  </a>
+                  <div>
+                    <p>
+                      <a href="https://terraria.org/">Site officiel de Terraria</a>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a href="https://terraria.fandom.com/fr/wiki/Terraria_Wiki">
+                    <i class="fa-solid fa-book"></i>
+                  </a>
+                  <div>
+                    <p>
+                      <a href="https://terraria.fandom.com/fr/wiki/Terraria_Wiki">Wiki officiel de Terraria</a>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="https://codepen.io/LauraMoya/pen/wRPRvM">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                  <div>
+                    <p>
+                      <a href="https://codepen.io/LauraMoya/pen/wRPRvM">Codepen Terraria NPCs</a>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a href="https://store.steampowered.com/app/105600/Terraria/">
+                    <i class="fa-brands fa-steam"></i>
+                  </a>
+                  <div>
+                    <p>
+                      <a href="https://store.steampowered.com/app/105600/Terraria/">Steam Terraria officiel</a>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-map">
+          <div class="map-img">
+            <img id="map" src="./assets/images/map.webp" alt="Terraria screen jeu">
+            <a href="https://matias.ma/nsfw/">
+              <img id="pan" src="./assets/images/pan.webp" alt="terraria panneau">
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
