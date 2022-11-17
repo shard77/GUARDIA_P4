@@ -614,7 +614,7 @@ main #credits .bottom-map .map-img img {
 }
 main #credits .bottom-map .map-img #pan {
   position: relative;
-  top: 15.3rem;
+  top: 15.5rem;
 }
 
 @-webkit-keyframes bounce {

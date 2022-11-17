@@ -11,78 +11,80 @@
     <title>Terraria</title>
 </head>
 <body>
-  <nav class="navbar">
-    <ul class="navbar-nav">
-      <li class="logo">
-        <a href="#" class="nav-link">
-          <span class="link-text logo-text">Terraria</span>
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fad"+
-            data-icon="angle-double-right"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
-          >
-            <g class="fa-group">
-              <path
-                fill="currentColor"
-                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
-                class="fa-secondary"
-              ></path>
-              <path
-                fill="currentColor"
-                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
-                class="fa-primary"
-              ></path>
-            </g>
-          </svg>
-        </a>
-      </li>
+  <header>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="logo">
+          <a href="#" class="nav-link">
+            <span class="link-text logo-text">Terraria</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"+
+              data-icon="angle-double-right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+            >
+              <g class="fa-group">
+                <path
+                  fill="currentColor"
+                  d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                  class="fa-secondary"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                  class="fa-primary"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </li>
 
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="fa-solid fa-house"></i>
-          <span class="link-text">Accueil</span>
-        </a>
-      </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-solid fa-house"></i>
+            <span class="link-text">Accueil</span>
+          </a>
+        </li>
 
-      <li class="nav-item">
-        <a href="#game" class="nav-link" id="link">
-          <i class="fa-solid fa-gamepad"></i>
-          <span class="link-text">Le Jeu</span>
-        </a>
-      </li>
+        <li class="nav-item">
+          <a href="#game" class="nav-link" id="link">
+            <i class="fa-solid fa-gamepad"></i>
+            <span class="link-text">Jeu</span>
+          </a>
+        </li>
 
-      <li class="nav-item">
-        <a href="#contact" class="nav-link">
-          <i class="fa-solid fa-address-card"></i>
-          <span class="link-text">Contact</span>
-        </a>
-      </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="link-text">Contact</span>
+          </a>
+        </li>
 
-      <li class="nav-item">
-        <a href="#credits" class="nav-link">
-          <i class="fa-solid fa-compass"></i>
-          <span class="link-text">Crédits</span>
-        </a>
-      </li>
+        <li class="nav-item">
+          <a href="#credits" class="nav-link">
+            <i class="fa-solid fa-compass"></i>
+            <span class="link-text">Crédits</span>
+          </a>
+        </li>
 
-      <li class="nav-item" id="ThemeSwitch">
-        <button class="nav-btn" onclick="toggleTheme()">
-          <i class="fa-solid fa-bolt"></i>
-          <span class="link-text">Light/Dark</span>
-        </button>
-      </li>
-    </ul>
-  </nav>
+        <li class="nav-item" id="ThemeSwitch">
+          <button class="nav-btn" onclick="toggleTheme()">
+            <i class="fa-solid fa-bolt"></i>
+            <span class="link-text">Light/Dark</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <section id="home">
       <div class="intro">
           <div class="intro-img">
-              <img src="./assets/terraria-banner.png" alt="logo terraria"/>
+              <img src="./assets/images/terraria-banner.webp" alt="bannière terraria"/>
           </div>
           <div class="intro-text">
             <h1>Terraria</h1>
@@ -100,7 +102,7 @@
                 ont le temps de décider eux-mêmes quoi faire et quand le jeu est "terminé". Le but le plus populaire et le plus fréquent
                 est de rendre 
                 le personnage le plus puissant possible et battre les boss les plus durs du jeu.</p>
-            <img src="./assets/slime-player.gif" alt="GIF slime et joueur terraria"/>
+            <img src="./assets/images/banner-gif.webp" alt="GIF slime et joueur terraria"/>
           </div>
       </div>
       <hr>
@@ -111,7 +113,7 @@
       <p>Le Hardmode est une phase du jeu bien plus difficile que le mode initial.
          Un monde fait une conversion permanente vers le Hardmode après avoir battu le Mur de chair.<br><br>
          Présentation du jeu par Jackplay Plus :</p>
-      <iframe width="860" height="315" src="https://www.youtube.com/embed/nLtbtd2tqJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Vidéo youtube gameplay"></iframe>
+      <iframe width="860" height="315" src="https://www.youtube.com/embed/nLtbtd2tqJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="npc">
       <div class="npc-left">
@@ -123,58 +125,58 @@
       <div class="npc-right ">
         <ul>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/7/7f/Guide.png?version=4e4e0ae76bcfff5ba3496aa221010f76" alt="NPCs terraria"/>
+            <img src="./assets/images/npc/guide.webp" alt="NPC guide terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/1/19/Merchant.png?version=56631d5fcd37a112c1214e79f5844071"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/merchant.webp"alt="NPC marchant terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/c/cc/Nurse.png?version=6592bec50bccfdeed4636d976baa1376"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/nurse.webp"alt="NPC infirmière terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/2/24/Painter.png?version=c7deb852cb9bd6953ab12c9c6075f49e"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/painter.webp"alt="NPC peintre terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/5/51/Dye_Trader.png?version=195b01ae30357dbf07b3bce964929155"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/dye-trader.webp"alt="NPC marchand de teinture terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/a/a8/Party_Girl.png?version=73d4b3b98bcc5cd10174c85e804fbacb"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/party_girl.webp"alt="NPC fêtarde terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/b/bf/Angler.png?version=e4c31b2d8bed57a0240f6c5179434262https://gamepedia.cursecdn.com/terraria_gamepedia/a/a8/Party_Girl.png?version=73d4b3b98bcc5cd10174c85e804fbacb" alt="NPCs terraria"/>
+            <img src="./assets/images/npc/angler.webp" alt="NPC pêcheur terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/1/16/Stylist.png?version=a524282e9c37f916526f5acf0d407444"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/stylist.webp" alt="NPC styliste terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/6/6e/Demolitionist.png?version=0ef67ec925efaccc0bd70c67bae32a3a"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/demolitionist.webp" alt="NPC démolisseur terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/5/5c/Dryad.png?version=d7811816a9b3908aec153990d5616255"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/dryad.webp" alt="NPC dryade terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/8/81/Tavernkeep.png?version=7754c9355e80f4c2284284f111d119b7"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/tavernkeep.webp" alt="NPC tavernière terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/9/9e/Arms_Dealer.png?version=d05689f02d0f1bb54d5e256bf2393f9b"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/arms_dealer.webp" alt="NPC marchand d'armes terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/8/86/Goblin_Tinkerer.png?version=4bda2717de60d6f401487393ba8c83e9"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/goblin-tinkerer.webp" alt="NPC gobelin bricoleur terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/a/ac/Witch_Doctor.png?version=4dbe2d779343bed91b7e6aa335774d42"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/shaman.webp" alt="NPC shaman terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/d/d2/Clothier.png?version=e323c5e5983510225a5955c71c187a9a"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/clothier.webp" alt="NPC marchant d'habits terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/5/55/Mechanic.png?version=ee3e7ebf0b4fe821b1387a79fef7fba5"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/mechanic.webp" alt="NPC mécanicien terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/7/75/Tax_Collector.png?version=2f05b35625f5869b7cd402f8f8cb89c6"alt="NPCs terraria"/>
+            <img src="./assets/images/npc/tax_collector.webp" alt="NPC collecteur de taxes terraria"/>
           </li>
           <li>
-            <img src="https://gamepedia.cursecdn.com/terraria_gamepedia/7/7d/Pirate.png?version=f6e620facfc8a054f45020908b09951d" alt="NPCs terraria"/>
+            <img src="./assets/images/npc/pirate.webp" alt="NPC pirate terraria"/>
           </li>
         </ul>
       </div>
@@ -187,27 +189,27 @@
            La plupart des boss et mini-boss peuvent passer à travers tous les types de blocs</p>
         <ul>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/9/93/King_Slime.gif" alt="boss terraria"/>
+            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/9/93/King_Slime.gif" alt="boss Roi Slime terraria"/>
             <p>Roi Slime</p>
             <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgb(64, 255, 0) 0%, rgb(200, 255, 0) 100%);"></div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/68/Eye_of_Cthulhu.gif" alt="boss terraria"/>
+            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/68/Eye_of_Cthulhu.gif" alt="boss Œil de Cthulhu terraria"/>
             <p>Œil de Cthulhu</p>
             <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgba(142,255,0,1) 0%, rgb(210, 156, 6) 100%);"></div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/60/Queen_Bee.gif" alt="boss terraria"/>
+            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/60/Queen_Bee.gif" alt="boss Reine des abeilles terraria"/>
             <p>Reine des abeilles</p>
             <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgba(142,255,0,1) 0%, rgb(210, 135, 6) 100%);"></div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6a/Brain_of_Cthulhu.gif" alt="boss terraria"/>
+            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6a/Brain_of_Cthulhu.gif" alt="boss Cerveau de Cthulhu terraria"/>
             <p>Cerveau de Cthulhu</p>
             <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgba(142,255,0,1) 0%, rgb(210, 101, 6) 100%);"></div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7f/Moon_Lord.png" alt="boss terraria"/>
+            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/7/7f/Moon_Lord.png" alt="boss Seigneur de la lune terraria"/>
             <p>Seigneur de la lune</p>
             <div class="diff-bar" style="background: rgb(142,255,0); background: linear-gradient(90deg, rgb(200, 255, 0) 0%, rgb(210, 9, 6) 100%);"></div>
           </li>
@@ -220,7 +222,7 @@
       <div class="weapons-list">
         <ul>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/c/cb/Copper_Broadsword.png">
+            <img src="./assets/images/objects/copper-sword.webp" alt="épée Cuivre Terraria">
             <p>Épée en Cuivre</p>
             <div class="stars">
               <span class="fa fa-star checked"></span>
@@ -231,7 +233,7 @@
             </div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/1/11/Gold_Broadsword.png">
+            <img src="./assets/images/objects/gold-sword.webp" alt="épée or Terraria">
             <p>Épée en Or</p>
             <div class="stars">
               <span class="fa fa-star checked"></span>
@@ -242,7 +244,7 @@
             </div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c5/Gladius.png">
+            <img src="./assets/images/objects/gladius.webp" alt="Gladius Terraria">
             <p>Gladius</p>
             <div class="stars">
               <span class="fa fa-star checked"></span>
@@ -253,7 +255,7 @@
             </div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/8/86/Palladium_Sword.png">
+            <img src="./assets/images/objects/palladium-sword.webp" alt="épée paladium Terraria">
             <p>Épée en Palladium</p>
             <div class="stars">
               <span class="fa fa-star checked"></span>
@@ -264,7 +266,7 @@
             </div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/66/Zenith.png">
+            <img src="./assets/images/objects/zenith.webp" alt="épée zenith Terraria">
             <p>Zénith</p>
             <div class="stars">
               <span class="fa fa-star checked"></span>
@@ -275,7 +277,7 @@
             </div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4e/Finch_Staff.png">
+            <img src="./assets/images/objects/finch-staff.webp" alt="sceptre pinson Terraria">
             <p>Sceptre pinson</p>
             <div class="stars">
               <span class="fa fa-star checked"></span>
@@ -286,7 +288,7 @@
             </div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/6/6f/Angel_Wings.png">
+            <img src="./assets/images/objects/angel-wings.webp" alt="ailes ange Terraria">
             <p>Ailes d'Ange</p>
             <div class="stars">
               <span class="fa fa-star checked"></span>
@@ -297,7 +299,7 @@
             </div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/b/ba/Terraspark_Boots.png">
+            <img src="./assets/images/objects/terra-boots.webp" alt="bottes terra Terraria">
             <p>Bottes Terra</p>
             <div class="stars">
               <span class="fa fa-star checked"></span>
@@ -308,7 +310,7 @@
             </div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/0/0e/Lunar_Hook.png">
+            <img src="./assets/images/objects/lunas-hook.webp" alt="grappin lunaire Terraria">
             <p>Grappin Lunaire</p>
             <div class="stars">
               <span class="fa fa-star checked"></span>
@@ -319,7 +321,7 @@
             </div>
           </li>
           <li>
-            <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/c/ca/Stardust_Pickaxe.png">
+            <img src="./assets/images/objects/stardust-pickaxe.webp" alt="pioche astrale Terraria">
             <p>Pioche Astrale</p>
             <div class="stars">
               <span class="fa fa-star checked"></span>

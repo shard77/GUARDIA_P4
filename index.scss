@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-
 $transition-speed: 600ms;
 
 .light-theme {
@@ -23,8 +22,8 @@ $transition-speed: 600ms;
   --btn-color: gray;
   --form-gradient: linear-gradient(90deg, rgb(39, 46, 40) 0%, rgb(54, 94, 5) 100%);
   --border: none;
-
 }
+
 * {
   margin:0;
   padding:0;
@@ -80,7 +79,6 @@ body {
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
     transition: $transition-speed;
-
   }
 
   .nav-btn {
@@ -144,7 +142,6 @@ body {
     margin: 0 1.5rem;
   }
 
-  
   .nav-link i {
     font-size: 1.7rem;
     min-width: 2rem;
@@ -192,13 +189,10 @@ body {
     transform: rotate(-180deg);
   }
   
-
-  
 main {
     margin-top: 5rem;
     margin-left:5rem;
     text-align: justify; 
-
 
     hr {
       margin-top: 5rem;
@@ -256,7 +250,6 @@ main {
                 }
             }
         }
-
         .why-text {
           margin-top: 3rem;
           max-width: 50em;
@@ -266,7 +259,6 @@ main {
             font-size: 2em;
             font-weight: bold;
             margin-bottom: 1rem;
-            
           }
 
           p {
@@ -279,7 +271,7 @@ main {
             width:100%;
             border-radius: 5px;
           }
-        }
+      }
     }
   }
 
@@ -726,7 +718,7 @@ main {
 
         #pan {
           position: relative;
-          top:15.3rem;
+          top:15.5rem;
         }
       }
     }
